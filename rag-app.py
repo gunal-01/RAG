@@ -121,8 +121,8 @@ Question: {question}
         return None
 
 # Streamlit UI
-st.title("Backend data Query with Mistral")
-st.write("Enter a EndPoint URL to fetch data and then ask a question to query")
+st.title("Backend Data Query with Mistral")
+st.write("Enter the Backend EndPoint URL to fetch data. You only need to enter the URL once. After fetching the data, you can ask multiple queries.")
 
 # Input fields
 endpoint_url = st.text_input("Enter the Backend EndPoint URL:")
