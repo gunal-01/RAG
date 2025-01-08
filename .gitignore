@@ -1,0 +1,4 @@
+.gradio/
+chroma_db/
+app.py
+rag.py
