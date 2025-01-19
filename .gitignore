@@ -1,3 +1,4 @@
 .gradio/
 app.py
 rag.py
+.vercel

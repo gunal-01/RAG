@@ -1,0 +1,17 @@
+{
+    "builds": [
+        {
+            "src": "setup.sh",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "public"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "rag-app.py"
+        }
+    ]
+}
