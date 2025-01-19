@@ -1,5 +1,6 @@
 streamlit
 langchain
-requests
-langchain-ollama
 langchain-community
+langchain-ollama
+requests
+chromadb
