@@ -10,7 +10,9 @@ from langchain_core.output_parsers import StrOutputParser
 import os
 import shutil
 import time
-
+import pysqlite3
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Initialize session state
 if 'json_data' not in st.session_state:
