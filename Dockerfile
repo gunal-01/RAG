@@ -24,4 +24,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8501
 
 # Run Ollama and the Streamlit app
-CMD ["sh", "-c", "ollama serve & streamlit run rag-app.py --server.port 8501"]
+CMD ["sh", "-c", "ollama serve & sleep 5 && streamlit run rag-app.py --server.port 8501"]
