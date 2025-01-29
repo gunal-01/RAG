@@ -1,9 +1,7 @@
-streamlit
+streamlit>=1.41.1
 requests
 langchain
 langchain-community
 langchain-ollama
 chromadb>=0.4.22
-sqlite3
-pysqlite3-binary
-shutil
+python>=3.9
