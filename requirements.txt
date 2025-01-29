@@ -4,6 +4,6 @@ langchain
 langchain-community
 langchain-ollama
 chromadb>=0.4.22
-sqlite3>=3.35.0
+sqlite3
 pysqlite3-binary
 shutil
