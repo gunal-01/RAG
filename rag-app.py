@@ -10,6 +10,17 @@ from langchain_core.output_parsers import StrOutputParser
 import os
 import shutil
 import time
+__import__('pysqlite3')
+import sys
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+from streamlit import logger
+import sqlite3
+
+app_logger = logger.get_logger('rag-app')
+app_logger.info(f"sqlite version: {sqlite3.sqlite_version}")
+app_logger.info(f"sys version: {sys.version}")
 
 # Initialize session state
 if 'json_data' not in st.session_state:
