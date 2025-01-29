@@ -10,6 +10,7 @@ from langchain_core.output_parsers import StrOutputParser
 import os
 import shutil
 import time
+import ollama
 import pysqlite3
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
