@@ -1,5 +1,5 @@
-Python 3.4.10
-pip install --upgrade pip
+Python<3.5
+pip
 streamlit>=1.41.1
 requests
 langchain
