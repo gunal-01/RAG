@@ -12,7 +12,9 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Ollama
-RUN curl -L https://ollama.com/download/linux | tar -xz -C /usr/local/bin
+RUN curl -L https://ollama.com/download/linux/ollama.tar.gz -o ollama.tar.gz && \
+    tar -xzf ollama.tar.gz -C /usr/local/bin && \
+    rm ollama.tar.gz
 
 # Copy the current directory contents into the container at /app
 COPY . /app
@@ -24,4 +26,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8501
 
 # Run Ollama and the Streamlit app
-CMD ["sh", "-c", "ollama serve & sleep 5 && streamlit run rag-app.py --server.port 8501"]
+CMD ["sh", "-c", "ollama serve & sleep 10 && streamlit run rag-app.py --server.port 8501"]
