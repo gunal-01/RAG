@@ -10,6 +10,8 @@ from langchain_core.output_parsers import StrOutputParser
 import os
 import shutil
 import time
+import chromadb
+
 
 # Initialize session state
 if 'json_data' not in st.session_state:
@@ -73,6 +75,7 @@ def safe_rmtree(directory, retries=5, delay=1):
 
 # 5. Fetch and process data
 def fetch_and_process_data(endpoint_url):
+    chromadb.api.client.SharedSystemClient.clear_system_cache()
     json_data = fetch_json(endpoint_url)
     if "error" in json_data:
         st.error(f"Error fetching JSON data: {json_data['error']}")
