@@ -2,3 +2,8 @@
 app.py
 rag.py
 .vercel
+__pycache__/
+*.pyc
+.env
+.gcloud/
+chroma_db/
