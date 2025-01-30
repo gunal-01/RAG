@@ -17,6 +17,10 @@ A local RAG (Retrieval Augmented Generation) application built with Streamlit an
 - Git
 - VS Code (recommended)
 
+## Try using this example Endpoint URL and example prompt to test my RAG app after installation:
+End-Point url : https://sdr-rag-60035688705.development.catalystserverless.in/server/sdr_rag_function/all
+Prompt: Based on the dataset, provide details about the most profitable order
+
 ## Installation
 
 ### Local Development Setup
@@ -45,7 +49,3 @@ ollama pull mistral
 # Start application
 streamlit run rag-app.py --server.port 8502
 
-
-Try using this example Endpoint URL and example prompt to test my RAG app:
-End-Point url : https://sdr-rag-60035688705.development.catalystserverless.in/server/sdr_rag_function/all
-Prompt: Based on the dataset, provide details about the most profitable order
