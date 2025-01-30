@@ -18,8 +18,8 @@ A local RAG (Retrieval Augmented Generation) application built with Streamlit an
 - VS Code (recommended)
 
 ## Try using this example Endpoint URL and example prompt to test my RAG app after installation:
-End-Point url : https://sdr-rag-60035688705.development.catalystserverless.in/server/sdr_rag_function/all
-Prompt: Based on the dataset, provide details about the most profitable order
+- End-Point url : https://sdr-rag-60035688705.development.catalystserverless.in/server/sdr_rag_function/all
+- Prompt: Based on the dataset, provide details about the most profitable order
 
 ## Installation
 
