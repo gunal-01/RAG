@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 8502 11434
 
 # Run Ollama and the Streamlit app
-CMD ["sh", "-c", "ollama serve & sleep 5 && ollama pull nomic-embed-text && ollama pull mistral && streamlit run rag-app.py --server.port 8502"]
+CMD ["sh", "-c", "ollama serve & sleep 5 && ollama pull nomic-embed-text && ollama pull mistral && streamlit run rag-app.py --server.port $PORT"]
